@@ -1,0 +1,29 @@
+definitions:
+  ExampleBody:
+    required:
+      - 'types'
+    properties:
+      types:
+        type: 'string'
+      source:
+        type: 'string'
+
+  ExampleResponse:
+    required:
+      - 'reqParams'
+      - 'reqBody'
+    properties:
+      reqParams:
+        required:
+          - 'source'
+        properties:
+          source:
+            type: 'string'
+        type: 'object'
+      reqBody:
+        required:
+          - 'type'
+        properties:
+          type:
+            type: 'string'
+        type: 'object'

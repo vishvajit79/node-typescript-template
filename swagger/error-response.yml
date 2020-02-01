@@ -1,0 +1,24 @@
+definitions:
+  ErrorResponse:
+    type: object
+    required:
+      - 'requestId'
+      - 'timestamp'
+      - 'status'
+      - 'message'
+      - 'source'
+    properties:
+      requestId:
+        type: string
+      timestamp:
+        type: number
+      status:
+        type: number
+      message:
+        type: string
+      source:
+        type: string
+      stack:
+        type: string
+      errorData:
+        type: object
